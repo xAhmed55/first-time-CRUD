@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container bg-info p-5 " >
+
+        <div class="form-inputs">
+            <div class="input-gp mb-3">
+                <label for="">Prodact Name</label>
+                <input id="ProdactName" type="text" class="form-control">
+            </div>
+            <div class="input-gp mb-3">
+                <label for="">Prodact Price</label>
+                <input id="ProdactPrice" type="text" class="form-control">
+            </div>
+            <div class="input-gp mb-3">
+                <label for="">Prodact category</label>
+                <input id="ProdactCategory" type="text" class="form-control">
+            </div>
+            <div class="input-gp mb-3">
+                <label for="">Prodact Descreption</label>
+                <textarea id="ProdactDesc" type="textarea" class="form-control"></textarea>
+            </div>
+            <button id="addBtn" class="btn btn-primary">add Prodact</button>
+        </div>
+        <div class="data mt-5">
+            <input onkeyup="search(this.value)" type="text" class="form-control mb-4" placeholder="serch by name">
+            <table class="table table-striped">
+                <thead>
+                    <th></th>
+                    <th>Name</th>
+                    <th>price</th>
+                    <th>category</th>
+                    <th>Descreption</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody id="tablebody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    
+
+
+
+
+    <script src="bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
